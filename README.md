@@ -1,9 +1,42 @@
-# emagjby.com
+# sv
 
-This repository contains the source for the main [emagjby.com](https://emagjby.com) website.
+Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
 
-The site is the main public hub for Emagjby, presenting its identity, projects, and links outward to related destinations such as Labs.
+## Creating a project
 
-This repository is for the brand website itself, including its design and content. It is not a reusable starter or general-purpose open source template.
+If you're seeing this, you've probably already done this step. Congrats!
 
-License: All rights reserved. This codebase and its design are not available for reuse, redistribution, or derivative use without explicit written permission.
+```sh
+# create a new project
+npx sv create my-app
+```
+
+To recreate this project with the same configuration:
+
+```sh
+# recreate this project
+bun x sv@0.14.1 create --template minimal --types ts --add tailwindcss="plugins:typography" --install bun .
+```
+
+## Developing
+
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+
+```sh
+npm run dev
+
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
+```
+
+## Building
+
+To create a production version of your app:
+
+```sh
+npm run build
+```
+
+You can preview the production build with `npm run preview`.
+
+> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
