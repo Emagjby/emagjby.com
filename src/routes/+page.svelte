@@ -11,8 +11,10 @@
 	<meta name="description" content={siteContent.description} />
 </svelte:head>
 
-<div class="min-h-screen bg-black text-white">
-	<header class="border-b border-white/10">
+<div class="min-h-screen">
+	<header
+		class="sticky top-0 z-10 border-b border-white/10 bg-black/70 backdrop-blur"
+	>
 		<Container class="flex items-center justify-between py-5">
 			<a href="/" class="text-lg font-semibold tracking-tight"
 				>{siteContent.name}</a
