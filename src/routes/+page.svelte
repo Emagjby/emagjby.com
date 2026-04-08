@@ -1,11 +1,12 @@
 <script lang="ts">
+	import AboutSection from "$lib/components/AboutSection.svelte";
 	import Header from "$lib/components/Header.svelte";
 	import ProjectCard from "$lib/components/ProjectCard.svelte";
+	import Hero from "$lib/components/Hero.svelte";
 	import Section from "$lib/components/Section.svelte";
 	import Container from "$lib/components/Container.svelte";
 	import { siteContent } from "$lib/content/site";
 	import { projects } from "$lib/content/projects";
-	import Hero from "$lib/components/Hero.svelte";
 </script>
 
 <svelte:head>
@@ -45,11 +46,7 @@
 		</div>
 	</Section>
 
-	<Section
-		id="about"
-		title={siteContent.about.title}
-		description={siteContent.about.body}
-	/>
+	<AboutSection />
 
 	<footer class="border-t border-white/10 py-8">
 		<Container
