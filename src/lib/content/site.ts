@@ -7,9 +7,9 @@ export const siteContent: SiteContent = {
         "Main public hub for Emagjby projects, ideas, and engineering work.",
     hero: {
         eyebrow: "Software, systems and experiments",
-        heading: "Built to create things that should exist.",
+        heading: "Building software that deserves to exist.",
         subheading:
-            "Emagjby is the public hub for projects, engineering work, and systems built with long-term intent.",
+            "Emagjby is a public home for projects, systems, and engineering built to last.",
         primaryCta: {
             label: "Explore projects",
             href: "#projects",
@@ -22,7 +22,7 @@ export const siteContent: SiteContent = {
     },
     about: {
         title: "About",
-        body: "Emagjby brings together software, systems, and experimentation. Some projects are polished, some are still forming, but all of them come from the same drive to build useful things and push ideas further.",
+        body: "Emagjby brings together software, systems, and experimentation. Some projects are polished, others are still forming, but all of them come from the same drive to build useful things and push ideas forward.",
     },
     labs: {
         href: "https://labs.emagjby.com",

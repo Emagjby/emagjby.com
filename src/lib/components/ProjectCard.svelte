@@ -12,7 +12,7 @@
 			<h3 class="text-xl font-semibold tracking-tight">{project.name}</h3>
 
 			{#if project.category}
-				<p class="mt-2 text-sm text-white/50">{project.category}</p>
+				<p class="mt-2 text-sm text-white/40">{project.category}</p>
 			{/if}
 		</div>
 	</div>
@@ -30,7 +30,7 @@
 				aria-label={`View project ${project.name}`}
 				class="text-sm font-medium text-white underline underline-offset-4 hover:text-white/80"
 			>
-				View project
+				View project →
 			</a>
 		</div>
 	{/if}

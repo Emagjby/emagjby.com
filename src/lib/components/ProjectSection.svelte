@@ -17,7 +17,7 @@
 	</div>
 
 	<div
-		class="mt-10 rounded-2xl border border-dashed border-white/10 p-6 text-sm text-white/60"
+		class="mt-10 rounded-2xl border border-dashed border-white/15 p-6 text-sm text-white/60"
 	>
 		<p>
 			{siteContent.labs.callout}
