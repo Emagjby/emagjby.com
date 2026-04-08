@@ -1,3 +1,9 @@
+export type FooterLink = {
+    label: string;
+    href: string;
+    external?: boolean;
+};
+
 export type NavItem = {
     label: string;
     href: string;
@@ -39,5 +45,6 @@ export type SiteContent = {
     };
     footer: {
         blurb: string;
+        links: FooterLink[];
     };
 };
