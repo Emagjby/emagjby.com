@@ -39,7 +39,11 @@
 		</Container>
 	</section>
 
-	<Section id="projects" title="Projects">
+	<Section
+		id="projects"
+		title="Projects"
+		description="A selection of core Emagjby projects and public work."
+	>
 		<div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
 			{#each projects as project}
 				<ProjectCard {project} />
@@ -63,13 +67,11 @@
 		</div>
 	</Section>
 
-	<Section id="about" title={siteContent.about.title}>
-		<div class="max-w-3xl">
-			<p class="text-base leading-8 text-white/70 sm:text-lg">
-				{siteContent.about.body}
-			</p>
-		</div>
-	</Section>
+	<Section
+		id="about"
+		title={siteContent.about.title}
+		description={siteContent.about.body}
+	/>
 
 	<footer class="border-t border-white/10 py-8">
 		<Container
