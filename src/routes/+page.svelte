@@ -4,9 +4,9 @@
 	import ProjectCard from "$lib/components/ProjectCard.svelte";
 	import Hero from "$lib/components/Hero.svelte";
 	import Section from "$lib/components/Section.svelte";
-	import Container from "$lib/components/Container.svelte";
 	import { siteContent } from "$lib/content/site";
 	import { projects } from "$lib/content/projects";
+	import Footer from "$lib/components/Footer.svelte";
 </script>
 
 <svelte:head>
@@ -47,20 +47,5 @@
 	</Section>
 
 	<AboutSection />
-
-	<footer class="border-t border-white/10 py-8">
-		<Container
-			class="flex flex-col gap-3 text-sm text-white/50 sm:flex-row sm:items-center sm:justify-between"
-		>
-			<p>{siteContent.footer.blurb}</p>
-			<a
-				href="https://github.com/Emagjby"
-				target="_blank"
-				rel="noopener noreferrer"
-				class="hover:text-white"
-			>
-				GitHub
-			</a>
-		</Container>
-	</footer>
+	<Footer />
 </div>

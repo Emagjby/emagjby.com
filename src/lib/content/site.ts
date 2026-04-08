@@ -30,6 +30,18 @@ export const siteContent: SiteContent = {
     },
     footer: {
         blurb: "Public home for Emagjby",
+        links: [
+            {
+                label: "GitHub",
+                href: "https://github.com/Emagjby",
+                external: true,
+            },
+            {
+                label: "Labs",
+                href: "https://labs.emagjby.com",
+                external: true,
+            },
+        ],
     },
 };
 
