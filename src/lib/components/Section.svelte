@@ -23,7 +23,7 @@
 </script>
 
 <section {id} class={`py-20 sm:py-28 ${className}`}>
-	<div class="mx-auto w-full max-w-6xl px-6 sm:px-8 lg:px-10">
+	<div class="mx-auto w-full max-w-5xl px-6 sm:px-8 lg:px-10">
 		{#if eyebrow || title || description}
 			<div class="max-w-3xl">
 				{#if eyebrow}
