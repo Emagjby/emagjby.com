@@ -40,8 +40,15 @@ body {
 }
 
 a {
-    color: inherit;
     text-decoration: none;
+}
+
+.prose a,
+.rich-text a,
+p a,
+li a,
+footer a {
+    color: inherit;
 }
 
 button,

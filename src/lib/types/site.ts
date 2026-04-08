@@ -19,6 +19,15 @@ export type SiteContent = {
         eyebrow?: string;
         heading: string;
         subheading: string;
+        primaryCta: {
+            label: string;
+            href: string;
+        };
+        secondaryCta?: {
+            label: string;
+            href: string;
+            external?: boolean;
+        };
     };
     about: {
         title: string;

@@ -5,6 +5,7 @@
 	import Container from "$lib/components/Container.svelte";
 	import { siteContent } from "$lib/content/site";
 	import { projects } from "$lib/content/projects";
+	import Hero from "$lib/components/Hero.svelte";
 </script>
 
 <svelte:head>
@@ -14,30 +15,7 @@
 
 <div class="min-h-screen">
 	<Header />
-
-	<section class="py-24 sm:py-32">
-		<Container>
-			{#if siteContent.hero.eyebrow}
-				<p
-					class="text-sm font-medium uppercase tracking-[0.2em] text-white/50"
-				>
-					{siteContent.hero.eyebrow}
-				</p>
-			{/if}
-
-			<h1
-				class="mt-4 max-w-4xl text-5xl font-semibold tracking-tight sm:text-7xl"
-			>
-				{siteContent.hero.heading}
-			</h1>
-
-			<p
-				class="mt-6 max-w-2xl text-lg leading-8 text-white/70 sm:text-xl"
-			>
-				{siteContent.hero.subheading}
-			</p>
-		</Container>
-	</section>
+	<Hero />
 
 	<Section
 		id="projects"

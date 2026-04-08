@@ -9,7 +9,16 @@ export const siteContent: SiteContent = {
         eyebrow: "Software, systems and experiments",
         heading: "Built to create things that should exist.",
         subheading:
-            "Emagjby is the public home for projects, engineering work, and systems built with long-term intent.",
+            "Emagjby is the public hub for projects, engineering work, and systems built with long-term intent.",
+        primaryCta: {
+            label: "Explore projects",
+            href: "#projects",
+        },
+        secondaryCta: {
+            label: "Visit Labs",
+            href: "https://labs.emagjby.com",
+            external: true,
+        },
     },
     about: {
         title: "About",
