@@ -1,8 +1,9 @@
 <script lang="ts">
-	import Container from "$lib/components/Container.svelte";
+	import Header from "$lib/components/Header.svelte";
 	import ProjectCard from "$lib/components/ProjectCard.svelte";
 	import Section from "$lib/components/Section.svelte";
-	import { navItems, siteContent } from "$lib/content/site";
+	import Container from "$lib/components/Container.svelte";
+	import { siteContent } from "$lib/content/site";
 	import { projects } from "$lib/content/projects";
 </script>
 
@@ -12,28 +13,7 @@
 </svelte:head>
 
 <div class="min-h-screen">
-	<header
-		class="sticky top-0 z-10 border-b border-white/10 bg-black/70 backdrop-blur"
-	>
-		<Container class="flex items-center justify-between py-5">
-			<a href="/" class="text-lg font-semibold tracking-tight"
-				>{siteContent.name}</a
-			>
-
-			<nav class="flex items-center gap-6 text-sm text-white/70">
-				{#each navItems as item}
-					<a
-						href={item.href}
-						target={item.external ? "_blank" : undefined}
-						rel={item.external ? "noopener noreferrer" : undefined}
-						class="transition hover:text-white"
-					>
-						{item.label}
-					</a>
-				{/each}
-			</nav>
-		</Container>
-	</header>
+	<Header />
 
 	<section class="py-24 sm:py-32">
 		<Container>
