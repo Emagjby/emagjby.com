@@ -3,7 +3,7 @@
 	import { siteContent } from "$lib/content/site";
 </script>
 
-<section class="relative overflow-hidden py-24 sm:py-32 lg:py-40">
+<section class="relative overflow-hidden py-20 sm:py-28 lg:py-36">
 	<Container>
 		<div class="max-w-4xl">
 			{#if siteContent.hero.eyebrow}
@@ -28,7 +28,7 @@
 
 			{#if siteContent.hero.primaryCta || siteContent.hero.secondaryCta}
 				<div
-					class="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center"
+					class="mt-8 flex flex-col gap-4 sm:mt-10 sm:flex-row sm:items-center"
 				>
 					<a
 						href={siteContent.hero.primaryCta.href}

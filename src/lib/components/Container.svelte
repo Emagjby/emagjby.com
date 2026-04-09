@@ -3,14 +3,26 @@
 	import type { SvelteHTMLElements } from "svelte/elements";
 
 	type Props = SvelteHTMLElements["div"] & {
+		size?: "wide" | "narrow";
 		children?: Snippet;
 	};
 
-	let { class: className = "", children, ...rest }: Props = $props();
+	let {
+		class: className = "",
+		size = "wide",
+		children,
+		...rest
+	}: Props = $props();
 </script>
 
 <div
-	class={`mx-auto w-full max-w-6xl px-6 sm:px-8 lg:px-10 ${className}`}
+	class={[
+		"mx-auto w-full px-[var(--layout-gutter)]",
+		size === "narrow"
+			? "max-w-[var(--layout-max-width-narrow)]"
+			: "max-w-[var(--layout-max-width-wide)]",
+		className,
+	]}
 	{...rest}
 >
 	{@render children?.()}

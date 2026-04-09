@@ -3,6 +3,12 @@
 :root {
   color-scheme: dark;
 
+  --layout-max-width-wide: 68rem;
+  --layout-max-width-narrow: 60rem;
+  --layout-gutter: 1.25rem;
+  --layout-section-space: 5rem;
+  --layout-section-gap: 2.5rem;
+
   --bg-base: #060509;
   --bg-surface: rgba(16, 14, 22, 0.72);
   --bg-elevated: rgba(23, 19, 31, 0.78);
@@ -219,6 +225,22 @@ select {
 
 section {
   scroll-margin-top: 80px;
+}
+
+@media (min-width: 640px) {
+  :root {
+    --layout-gutter: 1.75rem;
+    --layout-section-space: 6.5rem;
+    --layout-section-gap: 3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --layout-gutter: 2.25rem;
+    --layout-section-space: 8rem;
+    --layout-section-gap: 3.5rem;
+  }
 }
 
 :focus-visible {

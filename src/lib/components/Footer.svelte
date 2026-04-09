@@ -3,7 +3,7 @@
 	import { siteContent } from "$lib/content/site";
 </script>
 
-<footer class="border-t border-(--border-subtle) py-6 sm:py-10">
+<footer class="border-t border-(--border-subtle) py-8 sm:py-10">
 	<Container
 		class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between"
 	>
