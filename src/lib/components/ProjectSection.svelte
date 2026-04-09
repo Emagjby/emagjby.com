@@ -7,6 +7,7 @@
 
 <Section
 	id="projects"
+	size="wide"
 	title="Projects"
 	description="A selection of core Emagjby projects and public work."
 >
@@ -17,7 +18,7 @@
 	</div>
 
 	<div
-		class="mt-10 rounded-2xl border border-dashed border-(--border-default) bg-(--bg-elevated) p-6 text-sm text-(--text-muted)"
+		class="mt-[var(--layout-section-gap)] rounded-2xl border border-dashed border-(--border-default) bg-(--bg-elevated) p-6 text-sm text-(--text-muted)"
 	>
 		<p>
 			{siteContent.labs.callout}

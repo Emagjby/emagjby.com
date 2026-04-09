@@ -1,11 +1,13 @@
 <script lang="ts">
 	import type { Snippet } from "svelte";
+	import Container from "$lib/components/Container.svelte";
 
 	interface Props {
 		id?: string;
 		title?: string;
 		eyebrow?: string;
 		description?: string;
+		size?: "wide" | "narrow";
 		class?: string;
 		contentClass?: string;
 		children?: Snippet;
@@ -16,14 +18,15 @@
 		title = "",
 		eyebrow = "",
 		description = "",
+		size = "narrow",
 		class: className = "",
 		contentClass = "",
 		children,
 	}: Props = $props();
 </script>
 
-<section {id} class={`py-20 sm:py-28 ${className}`}>
-	<div class="mx-auto w-full max-w-5xl px-6 sm:px-8 lg:px-10">
+<section {id} class={["py-[var(--layout-section-space)]", className]}>
+	<Container {size}>
 		{#if eyebrow || title || description}
 			<div class="max-w-3xl">
 				{#if eyebrow}
@@ -53,9 +56,14 @@
 		{/if}
 
 		<div
-			class={`${eyebrow || title || description ? "mt-10" : ""} ${contentClass}`}
+			class={[
+				eyebrow || title || description
+					? "mt-[var(--layout-section-gap)]"
+					: "",
+				contentClass,
+			]}
 		>
 			{@render children?.()}
 		</div>
-	</div>
+	</Container>
 </section>
