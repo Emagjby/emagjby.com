@@ -28,7 +28,7 @@
 			<div class="max-w-3xl">
 				{#if eyebrow}
 					<p
-						class="text-sm font-medium uppercase tracking-[0.2em] text-white/45"
+						class="text-sm font-medium uppercase tracking-[0.2em] text-(--text-secondary)"
 					>
 						{eyebrow}
 					</p>
@@ -36,7 +36,7 @@
 
 				{#if title}
 					<h2
-						class="mt-3 text-2xl font-semibold tracking-tight text-white sm:text-3xl"
+						class="mt-3 text-2xl font-semibold tracking-tight text-(--text-primary) sm:text-3xl"
 					>
 						{title}
 					</h2>
@@ -44,7 +44,7 @@
 
 				{#if description}
 					<p
-						class="mt-4 text-base leading-8 text-white/65 sm:text-lg"
+						class="mt-4 text-base leading-8 text-(--text-muted) sm:text-lg"
 					>
 						{description}
 					</p>

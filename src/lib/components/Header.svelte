@@ -4,22 +4,22 @@
 </script>
 
 <header
-	class="sticky top-0 z-20 border-b border-white/10 bg-black/70 backdrop-blur-md"
+	class="sticky top-0 z-20 border-b border-(--border-subtle) bg-[var(--bg-overlay)] backdrop-blur-md"
 >
 	<Container class="flex items-center justify-between py-5">
-		<a href="/" class="text-lg font-semibold tracking-tight text-white">
+		<a href="/" class="interactive-link text-lg font-semibold tracking-tight text-(--text-primary)">
 			{siteContent.name}
 		</a>
 
 		<nav aria-label="Primary navigation">
-			<ul class="flex items-center gap-8 text-sm text-white/65">
-				{#each navItems as item}
+			<ul class="flex items-center gap-8 text-sm">
+				{#each navItems as item (item.href)}
 					<li>
 						<a
 							href={item.href}
 							target={item.external ? "_blank" : undefined}
 							rel={item.external ? "noreferrer" : undefined}
-							class="transition-colors hover:text-white"
+							class="interactive-link text-(--text-muted)"
 						>
 							{item.label}
 						</a>

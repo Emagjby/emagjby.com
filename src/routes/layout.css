@@ -2,19 +2,53 @@
 
 :root {
   color-scheme: dark;
+
+  --bg-base: #060509;
+  --bg-surface: #100e16;
+  --bg-elevated: #17131f;
+  --bg-overlay: rgba(10, 8, 15, 0.78);
+
+  --text-primary: rgba(248, 245, 255, 0.96);
+  --text-secondary: rgba(214, 205, 243, 0.72);
+  --text-muted: rgba(192, 183, 223, 0.68);
+
+  --border-subtle: rgba(152, 128, 227, 0.14);
+  --border-default: rgba(152, 128, 227, 0.24);
+
+  --accent-primary: #8b5cf6;
+  --accent-secondary: #ec4899;
+
+  --accent-glow: rgba(139, 92, 246, 0.18);
+  --accent-glow-strong: rgba(236, 72, 153, 0.14);
+
+  --gradient-accent: linear-gradient(
+    135deg,
+    var(--accent-primary) 0%,
+    var(--accent-secondary) 100%
+  );
 }
 
 html {
   scroll-behavior: smooth;
+  background: var(--bg-base);
 }
 
 body {
   margin: 0;
   min-width: 320px;
   background:
-    radial-gradient(circle at top, rgba(255, 255, 255, 0.04), transparent 35%),
-    #050505;
-  color: rgba(255, 255, 255, 0.96);
+    radial-gradient(
+      circle at 18% 0%,
+      var(--accent-glow),
+      transparent 42%
+    ),
+    radial-gradient(
+      circle at 82% 0%,
+      var(--accent-glow-strong),
+      transparent 38%
+    ),
+    var(--bg-base);
+  color: var(--text-primary);
   font-family:
     "Inter",
     ui-sans-serif,
@@ -41,14 +75,61 @@ body {
 
 a {
   text-decoration: none;
+  color: inherit;
+  transition:
+    color 0.22s ease,
+    border-color 0.22s ease,
+    background-color 0.22s ease,
+    opacity 0.22s ease,
+    box-shadow 0.28s ease,
+    transform 0.28s ease,
+    background-position 0.32s ease;
+}
+
+.interactive-link:hover {
+  color: var(--accent-primary);
+}
+
+.interactive-link-accent {
+  color: var(--accent-primary);
+}
+
+.interactive-link-accent:hover {
+  color: var(--accent-secondary);
+}
+
+.interactive-button {
+  background-image:
+    linear-gradient(rgba(6, 5, 9, 0.14), rgba(6, 5, 9, 0.14)),
+    var(--gradient-accent);
+  background-size: 160% 160%;
+  background-position: 0% 50%;
+  box-shadow: 0 16px 36px -24px var(--accent-glow);
+}
+
+.interactive-button:hover {
+  background-position: 100% 50%;
+  box-shadow: 0 20px 42px -22px var(--accent-glow);
+  transform: translateY(-1px);
+}
+
+.interactive-button-secondary:hover {
+  color: var(--accent-primary);
+  border-color: var(--accent-primary);
+  box-shadow: 0 16px 36px -26px var(--accent-glow);
+  transform: translateY(-1px);
 }
 
 .prose a,
 .rich-text a,
-p a,
-li a,
-footer a {
-  color: inherit;
+p a {
+  color: var(--accent-primary);
+}
+
+.prose a:hover,
+.rich-text a:hover,
+p a:hover {
+  color: var(--accent-secondary);
 }
 
 button,
@@ -62,7 +143,12 @@ section {
   scroll-margin-top: 80px;
 }
 
+:focus-visible {
+  outline: 2px solid var(--accent-primary);
+  outline-offset: 3px;
+}
+
 ::selection {
-  background: rgba(255, 255, 255, 0.18);
-  color: white;
+  background: var(--accent-glow);
+  color: var(--text-primary);
 }
