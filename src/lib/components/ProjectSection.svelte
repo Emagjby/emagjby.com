@@ -11,13 +11,13 @@
 	description="A selection of core Emagjby projects and public work."
 >
 	<div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-		{#each projects as project}
+		{#each projects as project (project.name)}
 			<ProjectCard {project} />
 		{/each}
 	</div>
 
 	<div
-		class="mt-10 rounded-2xl border border-dashed border-white/15 p-6 text-sm text-white/60"
+		class="mt-10 rounded-2xl border border-dashed border-(--border-default) bg-(--bg-elevated) p-6 text-sm text-(--text-muted)"
 	>
 		<p>
 			{siteContent.labs.callout}
@@ -25,7 +25,7 @@
 				href={siteContent.labs.href}
 				target="_blank"
 				rel="noopener noreferrer"
-				class="ml-1 text-white underline underline-offset-4 hover:text-white/80"
+				class="interactive-link-accent ml-1 font-medium underline underline-offset-4"
 			>
 				Visit Labs
 			</a>
