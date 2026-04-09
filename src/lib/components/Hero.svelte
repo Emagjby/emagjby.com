@@ -4,10 +4,6 @@
 </script>
 
 <section class="relative overflow-hidden py-24 sm:py-32 lg:py-40">
-	<div
-		class="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top,var(--accent-glow),transparent_35%)]"
-	></div>
-
 	<Container>
 		<div class="max-w-4xl">
 			{#if siteContent.hero.eyebrow}
