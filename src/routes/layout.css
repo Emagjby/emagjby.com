@@ -8,6 +8,13 @@
   --layout-gutter: 1.25rem;
   --layout-section-space: 5rem;
   --layout-section-gap: 2.5rem;
+  --layout-hero-space: 5rem;
+  --layout-footer-space: 2rem;
+  --layout-section-heading-width: 48rem;
+  --layout-section-heading-title-gap: 0.75rem;
+  --layout-section-heading-copy-gap: 1rem;
+  --layout-hero-heading-width: 56rem;
+  --layout-hero-copy-width: 42rem;
 
   --bg-base: #060509;
   --bg-surface: rgba(16, 14, 22, 0.72);
@@ -459,6 +466,8 @@ section {
     --layout-gutter: 1.75rem;
     --layout-section-space: 6.5rem;
     --layout-section-gap: 3rem;
+    --layout-hero-space: 7rem;
+    --layout-footer-space: 2.5rem;
   }
 }
 
@@ -467,6 +476,7 @@ section {
     --layout-gutter: 2.25rem;
     --layout-section-space: 8rem;
     --layout-section-gap: 3.5rem;
+    --layout-hero-space: 9rem;
   }
 }
 

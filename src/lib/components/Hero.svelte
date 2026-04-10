@@ -3,9 +3,9 @@
 	import { siteContent } from "$lib/content/site";
 </script>
 
-<section class="relative overflow-hidden py-20 sm:py-28 lg:py-36">
+<section class="relative overflow-hidden py-[var(--layout-hero-space)]">
 	<Container>
-		<div class="max-w-4xl">
+		<div class="max-w-[var(--layout-hero-heading-width)]">
 			{#if siteContent.hero.eyebrow}
 				<p
 					class="text-sm font-medium uppercase tracking-[0.2em] text-(--text-secondary)"
@@ -21,7 +21,7 @@
 			</h1>
 
 			<p
-				class="mt-6 max-w-2xl text-lg leading-8 text-(--text-muted) sm:text-xl"
+				class="mt-6 max-w-[var(--layout-hero-copy-width)] text-lg leading-8 text-(--text-muted) sm:text-xl"
 			>
 				{siteContent.hero.subheading}
 			</p>
