@@ -26,7 +26,7 @@
 				href={siteContent.labs.href}
 				target="_blank"
 				rel="noopener noreferrer"
-				class="interactive-link-accent ml-1 font-medium underline underline-offset-4"
+				class="interactive-link interactive-link-inline interactive-link-accent ml-1 font-medium"
 			>
 				Visit Labs
 			</a>

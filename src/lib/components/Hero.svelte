@@ -46,7 +46,7 @@
 							rel={siteContent.hero.secondaryCta.external
 								? "noopener noreferrer"
 								: undefined}
-							class="interactive-button-secondary inline-flex items-center justify-center rounded-full border border-(--border-default) bg-(--bg-elevated) px-6 py-3 text-sm font-medium text-(--text-primary) hover:bg-(--bg-surface)"
+							class="interactive-button-secondary inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-medium text-(--text-primary)"
 						>
 							{siteContent.hero.secondaryCta.label}
 						</a>

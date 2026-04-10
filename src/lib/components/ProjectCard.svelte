@@ -5,7 +5,7 @@
 </script>
 
 <article
-	class="flex h-full flex-col rounded-2xl border border-(--border-subtle) bg-(--bg-surface) p-6 backdrop-blur-sm"
+	class="interactive-card flex h-full flex-col rounded-2xl border p-6 backdrop-blur-sm"
 >
 	<div class="flex items-start justify-between gap-4">
 		<div>
@@ -30,9 +30,10 @@
 				target="_blank"
 				rel="noopener noreferrer"
 				aria-label={`View project ${project.name}`}
-				class="interactive-link text-sm font-medium text-(--text-primary) underline underline-offset-4"
+				class="interactive-link interactive-link-directional text-sm font-medium"
 			>
-				View project →
+				<span>View project</span>
+				<span aria-hidden="true" class="interactive-link-arrow">→</span>
 			</a>
 		</div>
 	{/if}

@@ -21,7 +21,7 @@
 							href={link.href}
 							target={link.external ? "_blank" : undefined}
 							rel={link.external ? "noreferrer" : undefined}
-							class="interactive-link text-(--text-muted)"
+							class="interactive-link interactive-footer-link"
 						>
 							{link.label}
 						</a>
