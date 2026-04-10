@@ -5,7 +5,7 @@
 </script>
 
 <article
-	class="interactive-card flex h-full flex-col rounded-2xl border p-6 backdrop-blur-sm"
+	class="interactive-card flex h-full flex-col rounded-2xl border p-6"
 >
 	<div class="flex items-start justify-between gap-4">
 		<div>
