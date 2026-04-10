@@ -5,6 +5,16 @@ export const siteContent: SiteContent = {
     title: "Emagjby",
     description:
         "Main public hub for Emagjby projects, ideas, and engineering work.",
+    brand: {
+        logo: {
+            // This logo URL is intentionally cached aggressively at the CDN edge
+            // and in browsers. If the asset changes, publish a new filename such
+            // as EmagjbyWhiteV2.png instead of reusing the same URL.
+            src: "https://cdn.emagjby.com/EmagjbyWhite.png",
+            width: 650,
+            height: 650,
+        },
+    },
     hero: {
         eyebrow: "Software, systems and experiments",
         heading: "Building software that deserves to exist.",
