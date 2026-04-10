@@ -4,7 +4,7 @@
 </script>
 
 <header
-	class="sticky top-0 z-20 border-b border-[rgba(152,128,227,0.1)] bg-[linear-gradient(180deg,rgba(8,7,12,0.72),rgba(8,7,12,0.38))] backdrop-blur-sm"
+	class="site-header-shell sticky top-0 z-20 border-b border-[rgba(152,128,227,0.1)]"
 >
 	<Container class="flex items-center justify-between py-4 sm:py-5">
 		<a
