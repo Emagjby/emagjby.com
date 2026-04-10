@@ -21,6 +21,13 @@ export type SiteContent = {
     name: string;
     title: string;
     description: string;
+    brand: {
+        logo: {
+            src: string;
+            width: number;
+            height: number;
+        };
+    };
     hero: {
         eyebrow?: string;
         heading: string;
