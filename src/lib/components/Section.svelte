@@ -46,7 +46,7 @@
 			<div class="max-w-[var(--layout-section-heading-width)]">
 				{#if eyebrow}
 					<p
-						class="text-sm font-medium uppercase tracking-[0.2em] text-(--text-secondary)"
+						class="text-[0.72rem] font-medium uppercase tracking-[0.18em] text-(--text-secondary) sm:text-sm sm:tracking-[0.2em]"
 					>
 						{eyebrow}
 					</p>
@@ -58,7 +58,7 @@
 							eyebrow
 								? "mt-[var(--layout-section-heading-title-gap)]"
 								: "",
-							"text-2xl font-semibold tracking-tight text-(--text-primary) sm:text-3xl",
+							"text-[1.75rem] leading-tight font-semibold tracking-tight text-(--text-primary) sm:text-3xl",
 						]}
 					>
 						{title}
@@ -71,7 +71,7 @@
 							title || eyebrow
 								? "mt-[var(--layout-section-heading-copy-gap)]"
 								: "",
-							"text-base leading-8 text-(--text-muted) sm:text-lg",
+							"text-[0.98rem] leading-7 text-(--text-muted) sm:text-lg sm:leading-8",
 						]}
 					>
 						{description}

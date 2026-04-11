@@ -14,14 +14,14 @@
 	spaceAfter="var(--layout-section-space-compact)"
 	contentGap="var(--layout-section-gap-compact)"
 >
-	<div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+	<div class="project-grid grid gap-4 sm:gap-5 md:grid-cols-2 xl:grid-cols-3 xl:gap-6">
 		{#each projects as project (project.name)}
 			<ProjectCard {project} />
 		{/each}
 	</div>
 
 	<div
-		class="labs-callout mt-[var(--layout-section-gap-compact)] rounded-[1.35rem] border p-6 text-sm text-(--text-muted)"
+		class="labs-callout mt-[var(--layout-section-gap-compact)] rounded-[1.35rem] border p-5 text-sm text-(--text-muted) sm:p-6"
 	>
 		<p class="m-0">
 			{siteContent.labs.callout}
@@ -38,8 +38,18 @@
 </Section>
 
 <style>
+	.project-grid {
+		align-items: stretch;
+	}
+
 	.labs-callout {
 		border-color: var(--border-subtle);
 		background: rgba(16, 14, 22, 0.68);
+	}
+
+	@media (max-width: 639px) {
+		.labs-callout {
+			border-radius: 1.2rem;
+		}
 	}
 </style>
