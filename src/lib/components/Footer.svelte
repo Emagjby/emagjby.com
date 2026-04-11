@@ -34,7 +34,7 @@
 		position: relative;
 		margin-top: calc(var(--layout-footer-overlap) * -1);
 		padding-top: var(--layout-footer-space);
-		padding-bottom: calc(var(--layout-footer-space) - 0.3rem);
+		padding-bottom: max(1.5rem, calc(var(--layout-footer-space) - 0.1rem));
 		border-top: 1px solid var(--border-subtle);
 		background: linear-gradient(
 			180deg,
@@ -67,7 +67,7 @@
 	.site-footer-blurb {
 		margin: 0;
 		font-size: 0.8rem;
-		line-height: 1.45;
+		line-height: 1.5;
 		letter-spacing: 0.014em;
 		color: var(--text-muted);
 	}
@@ -89,10 +89,21 @@
 	.site-footer-link {
 		display: inline-flex;
 		align-items: center;
-		padding: 0.15rem 0;
+		min-height: 2.5rem;
+		padding: 0.2rem 0;
 		font-size: 0.84rem;
 		line-height: 1.35;
 		letter-spacing: 0.012em;
+	}
+
+	@media (max-width: 639px) {
+		.site-footer {
+			margin-top: 0;
+		}
+
+		.site-footer-links {
+			gap: 0.35rem 1rem;
+		}
 	}
 
 	.site-footer-link:focus-visible {

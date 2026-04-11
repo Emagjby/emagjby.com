@@ -3,7 +3,9 @@
 	import { siteContent } from "$lib/content/site";
 </script>
 
-<section class="hero-section relative overflow-hidden pt-0 pb-[var(--layout-hero-space-bottom)]">
+<section
+	class="hero-section relative overflow-hidden pt-0 pb-[var(--layout-hero-space-bottom)]"
+>
 	<Container>
 		<div class="hero-block max-w-[var(--layout-hero-heading-width)]">
 			{#if siteContent.hero.eyebrow}
@@ -53,19 +55,21 @@
 
 <style>
 	.hero-section {
-		padding-top: clamp(2.75rem, 10vw, 5rem);
+		padding-top: clamp(2.15rem, 9vw, 4.5rem);
 	}
 
 	.hero-eyebrow {
+		margin: 0;
+		font-size: 0.72rem;
 		letter-spacing: 0.2em;
 	}
 
 	.hero-heading {
-		margin: 0.8rem 0 0;
+		margin: 0.7rem 0 0;
 		max-width: 9ch;
-		font-size: clamp(2.8rem, 11vw, 4.15rem);
+		font-size: clamp(2.35rem, 11vw, 4rem);
 		font-weight: 600;
-		line-height: 0.9;
+		line-height: 0.92;
 		letter-spacing: -0.055em;
 		text-wrap: balance;
 	}
@@ -74,15 +78,16 @@
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
-		min-height: clamp(19rem, 52vh, 28rem);
+		min-height: clamp(18rem, 50vh, 27rem);
 		justify-content: center;
 	}
 
 	.hero-copy {
-		margin: 1.2rem 0 0;
+		margin: 1rem 0 0;
 		width: 100%;
-		font-size: 1rem;
-		line-height: 1.68;
+		max-width: 31rem;
+		font-size: 0.98rem;
+		line-height: 1.62;
 		text-wrap: pretty;
 	}
 
@@ -92,7 +97,7 @@
 		align-items: stretch;
 		width: 100%;
 		gap: 0.75rem;
-		margin-top: 1.6rem;
+		margin-top: 1.4rem;
 	}
 
 	.hero-actions :global(a) {
@@ -100,9 +105,24 @@
 		font-size: 0.92rem;
 	}
 
+	@media (min-width: 480px) {
+		.hero-actions {
+			max-width: none;
+		}
+
+		.hero-actions :global(a) {
+			width: auto;
+			min-width: 10.75rem;
+		}
+	}
+
 	@media (min-width: 640px) {
 		.hero-section {
 			padding-top: clamp(4.5rem, 7vw, 7rem);
+		}
+
+		.hero-eyebrow {
+			font-size: 0.75rem;
 		}
 
 		.hero-heading {
@@ -132,6 +152,7 @@
 			flex-direction: row;
 			flex-wrap: wrap;
 			align-items: center;
+			width: auto;
 			gap: 1rem;
 		}
 

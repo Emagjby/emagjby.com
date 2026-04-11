@@ -5,7 +5,7 @@
 </script>
 
 <article
-	class="project-card interactive-card flex flex-col self-start rounded-[1.35rem] border p-5 sm:p-6"
+	class="project-card interactive-card flex h-full flex-col self-start rounded-[1.35rem] border p-5 sm:p-6"
 >
 	<div class="project-card-body flex flex-col">
 		<div class="project-card-header">
@@ -95,11 +95,12 @@
 		margin: 0.9rem 0 0;
 		color: var(--text-muted);
 		line-height: 1.6;
+		text-wrap: pretty;
 	}
 
 	.project-card-footer {
-		margin-top: 1.3rem;
-		padding-top: 0.15rem;
+		margin-top: auto;
+		padding-top: 1.35rem;
 		display: flex;
 		align-items: center;
 	}
@@ -120,6 +121,21 @@
 		transition:
 			opacity var(--motion-duration-fast) var(--motion-ease-standard),
 			transform var(--motion-duration-standard) var(--motion-ease-standard);
+	}
+
+	@media (max-width: 639px) {
+		.project-card {
+			border-radius: 1.2rem;
+		}
+
+		.project-card-title {
+			font-size: 1.12rem;
+		}
+
+		.project-card-description {
+			margin-top: 0.8rem;
+			font-size: 0.92rem;
+		}
 	}
 
 	.project-card:focus-within {
