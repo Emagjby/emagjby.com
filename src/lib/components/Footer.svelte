@@ -35,7 +35,7 @@
 		margin-top: calc(var(--layout-footer-overlap) * -1);
 		padding-top: var(--layout-footer-space);
 		padding-bottom: calc(var(--layout-footer-space) - 0.3rem);
-		border-top: 1px solid rgba(158, 136, 227, 0.22);
+		border-top: 1px solid var(--border-subtle);
 		background: linear-gradient(
 			180deg,
 			rgba(12, 10, 18, 0.62) 0%,
@@ -78,7 +78,7 @@
 		font-size: 0.88rem;
 		font-weight: 560;
 		letter-spacing: 0.012em;
-		color: rgba(248, 245, 255, 0.94);
+		color: var(--text-primary);
 	}
 
 	.site-footer-blurb {
@@ -86,7 +86,7 @@
 		font-size: 0.8rem;
 		line-height: 1.45;
 		letter-spacing: 0.014em;
-		color: rgba(192, 183, 223, 0.76);
+		color: var(--text-muted);
 	}
 
 	.site-footer-nav {
@@ -110,6 +110,12 @@
 		font-size: 0.84rem;
 		line-height: 1.35;
 		letter-spacing: 0.012em;
+	}
+
+	.site-footer-link:focus-visible {
+		outline: none;
+		box-shadow: var(--focus-ring);
+		border-radius: 999px;
 	}
 
 	@media (min-width: 640px) {

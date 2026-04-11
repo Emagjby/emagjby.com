@@ -21,9 +21,9 @@
 	</div>
 
 	<div
-		class="mt-[var(--layout-section-gap-compact)] rounded-2xl border border-dashed border-(--border-default) bg-(--bg-elevated) p-6 text-sm text-(--text-muted)"
+		class="labs-callout mt-[var(--layout-section-gap-compact)] rounded-[1.35rem] border p-6 text-sm text-(--text-muted)"
 	>
-		<p>
+		<p class="m-0">
 			{siteContent.labs.callout}
 			<a
 				href={siteContent.labs.href}
@@ -36,3 +36,29 @@
 		</p>
 	</div>
 </Section>
+
+<style>
+	.labs-callout {
+		border-color: var(--border-subtle);
+		background:
+			linear-gradient(180deg, rgba(255, 255, 255, 0.025), rgba(255, 255, 255, 0)),
+			var(--surface-card-fill);
+		box-shadow:
+			var(--surface-shadow-soft),
+			inset 0 1px 0 rgba(255, 255, 255, 0.025);
+	}
+
+	@supports ((-webkit-backdrop-filter: blur(1px)) or (backdrop-filter: blur(1px))) {
+		.labs-callout {
+			background:
+				linear-gradient(
+					180deg,
+					rgba(255, 255, 255, 0.025),
+					rgba(255, 255, 255, 0)
+				),
+				var(--surface-card-fill-frosted);
+			-webkit-backdrop-filter: blur(4px) saturate(110%);
+			backdrop-filter: blur(4px) saturate(110%);
+		}
+	}
+</style>

@@ -23,7 +23,6 @@
 		</p>
 
 		{#if project.href}
-			<br />
 			<div class="project-card-footer">
 				<a
 					href={project.href}
@@ -46,7 +45,7 @@
 		isolation: isolate;
 		align-self: start;
 		overflow: hidden;
-		border-color: rgba(167, 146, 236, 0.2);
+		border-color: var(--border-subtle);
 		background:
 			radial-gradient(
 				circle at 86% -14%,
@@ -114,7 +113,8 @@
 
 	.project-card-category {
 		margin: 0;
-		color: rgba(214, 205, 243, 0.5);
+		color: var(--text-secondary);
+		opacity: 0.7;
 		font-size: 0.68rem;
 		font-weight: 500;
 		letter-spacing: 0.11em;
@@ -135,12 +135,12 @@
 
 	.project-card-description {
 		margin: 0.9rem 0 0;
-		color: rgba(205, 196, 236, 0.72);
+		color: var(--text-muted);
 		line-height: 1.6;
 	}
 
 	.project-card-footer {
-		margin-top: 0.55rem;
+		margin-top: 1.3rem;
 		padding-top: 0.05rem;
 		display: flex;
 		align-items: center;
@@ -150,7 +150,7 @@
 	.project-card-link {
 		width: auto;
 		justify-content: flex-start;
-		color: rgba(240, 235, 255, 0.9);
+		color: var(--text-accent);
 		gap: 0.34rem;
 	}
 
@@ -166,7 +166,7 @@
 	}
 
 	.project-card:focus-within {
-		border-color: rgba(184, 161, 255, 0.34);
+		border-color: var(--border-default);
 		background:
 			radial-gradient(
 				circle at 86% -16%,
@@ -197,7 +197,8 @@
 	}
 
 	.project-card:focus-within .project-card-category {
-		color: rgba(229, 219, 255, 0.64);
+		color: var(--text-accent);
+		opacity: 0.86;
 	}
 
 	.project-card:focus-within .project-card-link-arrow {
@@ -206,7 +207,7 @@
 
 	@media (hover: hover) {
 		.project-card:hover {
-			border-color: rgba(184, 161, 255, 0.34);
+			border-color: var(--border-default);
 			background:
 				radial-gradient(
 					circle at 86% -16%,
@@ -237,7 +238,8 @@
 		}
 
 		.project-card:hover .project-card-category {
-			color: rgba(229, 219, 255, 0.64);
+			color: var(--text-accent);
+			opacity: 0.86;
 		}
 
 		.project-card:hover .project-card-link-arrow {
