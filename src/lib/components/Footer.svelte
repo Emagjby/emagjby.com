@@ -32,9 +32,9 @@
 <style>
 	.site-footer {
 		position: relative;
-		margin-top: -1.2rem;
-		padding-top: 1.4rem;
-		padding-bottom: 1.7rem;
+		margin-top: calc(var(--layout-footer-overlap) * -1);
+		padding-top: var(--layout-footer-space);
+		padding-bottom: calc(var(--layout-footer-space) - 0.3rem);
 		border-top: 1px solid rgba(158, 136, 227, 0.22);
 		background: linear-gradient(
 			180deg,
@@ -113,12 +113,6 @@
 	}
 
 	@media (min-width: 640px) {
-		.site-footer {
-			margin-top: -1.75rem;
-			padding-top: 1.55rem;
-			padding-bottom: 1.95rem;
-		}
-
 		:global(.site-footer-inner) {
 			flex-direction: row;
 			align-items: flex-end;
@@ -136,11 +130,4 @@
 		}
 	}
 
-	@media (min-width: 1024px) {
-		.site-footer {
-			margin-top: -2.2rem;
-			padding-top: 1.7rem;
-			padding-bottom: 2.1rem;
-		}
-	}
 </style>

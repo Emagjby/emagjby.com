@@ -10,6 +10,9 @@
 	size="wide"
 	title="Projects"
 	description="A selection of core Emagjby projects and public work."
+	spaceBefore="var(--layout-section-space-tight)"
+	spaceAfter="var(--layout-section-space-compact)"
+	contentGap="var(--layout-section-gap-compact)"
 >
 	<div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
 		{#each projects as project (project.name)}
@@ -18,7 +21,7 @@
 	</div>
 
 	<div
-		class="mt-[var(--layout-section-gap)] rounded-2xl border border-dashed border-(--border-default) bg-(--bg-elevated) p-6 text-sm text-(--text-muted)"
+		class="mt-[var(--layout-section-gap-compact)] rounded-2xl border border-dashed border-(--border-default) bg-(--bg-elevated) p-6 text-sm text-(--text-muted)"
 	>
 		<p>
 			{siteContent.labs.callout}

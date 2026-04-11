@@ -7,9 +7,14 @@
   --layout-max-width-narrow: 60rem;
   --layout-gutter: 1.25rem;
   --layout-section-space: 5rem;
+  --layout-section-space-compact: 4rem;
+  --layout-section-space-tight: 3rem;
   --layout-section-gap: 2.5rem;
+  --layout-section-gap-compact: 2rem;
   --layout-hero-space: 5rem;
+  --layout-hero-space-bottom: 4.25rem;
   --layout-footer-space: 2rem;
+  --layout-footer-overlap: 0.9rem;
   --layout-section-heading-width: 48rem;
   --layout-section-heading-title-gap: 0.75rem;
   --layout-section-heading-copy-gap: 1rem;
@@ -465,9 +470,14 @@ section {
   :root {
     --layout-gutter: 1.75rem;
     --layout-section-space: 6.5rem;
+    --layout-section-space-compact: 5.25rem;
+    --layout-section-space-tight: 4rem;
     --layout-section-gap: 3rem;
+    --layout-section-gap-compact: 2.5rem;
     --layout-hero-space: 7rem;
+    --layout-hero-space-bottom: 5.75rem;
     --layout-footer-space: 2.5rem;
+    --layout-footer-overlap: 1.2rem;
   }
 }
 
@@ -475,8 +485,14 @@ section {
   :root {
     --layout-gutter: 2.25rem;
     --layout-section-space: 8rem;
+    --layout-section-space-compact: 6.5rem;
+    --layout-section-space-tight: 5rem;
     --layout-section-gap: 3.5rem;
+    --layout-section-gap-compact: 2.75rem;
     --layout-hero-space: 9rem;
+    --layout-hero-space-bottom: 7rem;
+    --layout-footer-space: 2.75rem;
+    --layout-footer-overlap: 1.5rem;
   }
 }
 

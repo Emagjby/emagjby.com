@@ -8,6 +8,9 @@
 		eyebrow?: string;
 		description?: string;
 		size?: "wide" | "narrow";
+		spaceBefore?: string;
+		spaceAfter?: string;
+		contentGap?: string;
 		class?: string;
 		contentClass?: string;
 		children?: Snippet;
@@ -19,13 +22,25 @@
 		eyebrow = "",
 		description = "",
 		size = "wide",
+		spaceBefore = "var(--layout-section-space)",
+		spaceAfter = "var(--layout-section-space)",
+		contentGap = "var(--layout-section-gap)",
 		class: className = "",
 		contentClass = "",
 		children,
 	}: Props = $props();
 </script>
 
-<section {id} class={["py-[var(--layout-section-space)]", className]}>
+<section
+	{id}
+	class={[
+		"pt-[var(--section-space-before)] pb-[var(--section-space-after)]",
+		className,
+	]}
+	style:--section-space-before={spaceBefore}
+	style:--section-space-after={spaceAfter}
+	style:--section-content-gap={contentGap}
+>
 	<Container {size}>
 		{#if eyebrow || title || description}
 			<div class="max-w-[var(--layout-section-heading-width)]">
@@ -69,7 +84,7 @@
 			<div
 				class={[
 					eyebrow || title || description
-						? "mt-[var(--layout-section-gap)]"
+						? "mt-[var(--section-content-gap)]"
 						: "",
 					contentClass,
 				]}
