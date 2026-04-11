@@ -7,4 +7,6 @@
 	id="about"
 	title={siteContent.about.title}
 	description={siteContent.about.body}
+	spaceBefore="var(--layout-section-space-compact)"
+	spaceAfter="var(--layout-section-space-tight)"
 />

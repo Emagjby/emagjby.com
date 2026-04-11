@@ -3,9 +3,7 @@
 	import { siteContent } from "$lib/content/site";
 </script>
 
-<section
-	class="hero-section relative overflow-hidden py-[var(--layout-hero-space)]"
->
+<section class="hero-section relative overflow-hidden pt-0 pb-[var(--layout-hero-space-bottom)]">
 	<Container>
 		<div class="hero-block max-w-[var(--layout-hero-heading-width)]">
 			{#if siteContent.hero.eyebrow}
