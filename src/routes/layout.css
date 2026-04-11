@@ -206,26 +206,6 @@ body::after {
   color: var(--text-muted);
 }
 
-.interactive-nav-link::after {
-  content: "";
-  position: absolute;
-  left: 0.1rem;
-  right: 0.1rem;
-  bottom: -0.26rem;
-  height: 1px;
-  background: linear-gradient(
-    90deg,
-    rgba(139, 92, 246, 0.7),
-    rgba(236, 72, 153, 0.42)
-  );
-  opacity: 0;
-  transform: scaleX(0.72);
-  transform-origin: left center;
-  transition:
-    opacity var(--motion-duration-fast) var(--motion-ease-standard),
-    transform var(--motion-duration-standard) var(--motion-ease-standard);
-}
-
 .interactive-footer-link {
   color: var(--text-muted);
 }
@@ -245,9 +225,7 @@ body::after {
 .site-header-shell {
   background: var(--surface-header-fill);
   border-bottom: 1px solid rgba(167, 146, 236, 0.11);
-  box-shadow:
-    0 14px 34px -32px rgba(2, 1, 6, 0.94),
-    inset 0 -1px 0 rgba(255, 255, 255, 0.015);
+  box-shadow: 0 14px 34px -32px rgba(2, 1, 6, 0.94);
   transition:
     border-color var(--motion-duration-fast) var(--motion-ease-standard),
     box-shadow var(--motion-duration-standard) var(--motion-ease-standard);
@@ -283,7 +261,6 @@ body::after {
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0)),
     var(--bg-elevated);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03);
 }
 
 .interactive-card {
@@ -302,7 +279,7 @@ body::after {
     linear-gradient(180deg, rgba(255, 255, 255, 0.025), rgba(255, 255, 255, 0)),
     var(--surface-card-current-fill-strong);
   box-shadow: var(--surface-shadow-emphasis);
-  transform: translate3d(0, -2px, 0);
+  transform: translate3d(0, -1px, 0);
 }
 
 .interactive-card:focus-within .interactive-link-directional {
@@ -382,11 +359,6 @@ p a:not([class]) {
     color: var(--text-accent);
   }
 
-  .interactive-nav-link:hover::after {
-    opacity: 0.72;
-    transform: scaleX(1);
-  }
-
   .interactive-footer-link:hover {
     color: var(--text-primary);
   }
@@ -427,9 +399,6 @@ p a:not([class]) {
         rgba(255, 255, 255, 0)
       ),
       rgba(19, 17, 27, 0.9);
-    box-shadow:
-      0 14px 28px -26px rgba(139, 92, 246, 0.18),
-      inset 0 1px 0 rgba(255, 255, 255, 0.05);
     transform: translate3d(0, -1px, 0);
   }
 
@@ -443,7 +412,7 @@ p a:not([class]) {
       ),
       var(--surface-card-current-fill-strong);
     box-shadow: var(--surface-shadow-emphasis);
-    transform: translate3d(0, -2px, 0);
+    transform: translate3d(0, -1px, 0);
   }
 
   .interactive-card:hover .interactive-link-directional {

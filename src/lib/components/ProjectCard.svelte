@@ -42,20 +42,14 @@
 <style>
 	.project-card {
 		position: relative;
-		isolation: isolate;
 		align-self: start;
 		overflow: hidden;
 		border-color: var(--border-subtle);
 		background:
 			radial-gradient(
-				circle at 86% -14%,
-				rgba(236, 72, 153, 0.12),
-				transparent 34%
-			),
-			radial-gradient(
-				circle at 0% 0%,
-				rgba(139, 92, 246, 0.1),
-				transparent 30%
+				circle at 100% 0%,
+				rgba(236, 72, 153, 0.08),
+				transparent 28%
 			),
 			linear-gradient(
 				180deg,
@@ -64,46 +58,13 @@
 				rgba(255, 255, 255, 0) 100%
 			),
 			var(--surface-card-current-fill);
-		box-shadow:
-			0 18px 34px -28px rgba(2, 1, 6, 0.96),
-			inset 0 1px 0 rgba(255, 255, 255, 0.03);
-	}
-
-	.project-card::before,
-	.project-card::after {
-		content: "";
-		position: absolute;
-		pointer-events: none;
-	}
-
-	.project-card::before {
-		inset: 0;
-		border-radius: inherit;
-		border: 1px solid rgba(255, 255, 255, 0.025);
-	}
-
-	.project-card::after {
-		right: -1.45rem;
-		bottom: -2.3rem;
-		width: 8.75rem;
-		aspect-ratio: 1;
-		border-radius: 999px;
-		background: radial-gradient(
-			circle,
-			rgba(139, 92, 246, 0.22) 0%,
-			rgba(236, 72, 153, 0.11) 34%,
-			transparent 74%
-		);
-		opacity: 0.13;
-		transform: translate3d(0, 0, 0);
-		transition:
-			opacity var(--motion-duration-standard) var(--motion-ease-standard),
-			transform var(--motion-duration-emphasis) var(--motion-ease-standard);
+		box-shadow: 0 18px 34px -28px rgba(2, 1, 6, 0.96);
 	}
 
 	.project-card-body {
-		position: relative;
-		z-index: 1;
+		display: flex;
+		flex-direction: column;
+		height: 100%;
 	}
 
 	.project-card-header {
@@ -114,14 +75,11 @@
 	.project-card-category {
 		margin: 0;
 		color: var(--text-secondary);
-		opacity: 0.7;
+		opacity: 0.66;
 		font-size: 0.68rem;
 		font-weight: 500;
 		letter-spacing: 0.11em;
 		text-transform: uppercase;
-		transition:
-			color var(--motion-duration-fast) var(--motion-ease-standard),
-			opacity var(--motion-duration-fast) var(--motion-ease-standard);
 	}
 
 	.project-card-title {
@@ -141,10 +99,9 @@
 
 	.project-card-footer {
 		margin-top: 1.3rem;
-		padding-top: 0.05rem;
+		padding-top: 0.15rem;
 		display: flex;
 		align-items: center;
-		border-top: 0;
 	}
 
 	.project-card-link {
@@ -169,14 +126,9 @@
 		border-color: var(--border-default);
 		background:
 			radial-gradient(
-				circle at 86% -16%,
-				rgba(236, 72, 153, 0.16),
-				transparent 36%
-			),
-			radial-gradient(
-				circle at 0% 0%,
-				rgba(139, 92, 246, 0.14),
-				transparent 32%
+				circle at 100% 0%,
+				rgba(236, 72, 153, 0.1),
+				transparent 30%
 			),
 			linear-gradient(
 				180deg,
@@ -185,20 +137,7 @@
 				rgba(255, 255, 255, 0) 100%
 			),
 			var(--surface-card-current-fill-strong);
-		box-shadow:
-			0 24px 44px -28px rgba(1, 0, 6, 0.98),
-			0 18px 32px -32px rgba(139, 92, 246, 0.36),
-			inset 0 1px 0 rgba(255, 255, 255, 0.035);
-	}
-
-	.project-card:focus-within::after {
-		opacity: 0.22;
-		transform: translate3d(-3%, -7%, 0);
-	}
-
-	.project-card:focus-within .project-card-category {
-		color: var(--text-accent);
-		opacity: 0.86;
+		box-shadow: 0 24px 44px -28px rgba(1, 0, 6, 0.98);
 	}
 
 	.project-card:focus-within .project-card-link-arrow {
@@ -210,14 +149,9 @@
 			border-color: var(--border-default);
 			background:
 				radial-gradient(
-					circle at 86% -16%,
-					rgba(236, 72, 153, 0.16),
-					transparent 36%
-				),
-				radial-gradient(
-					circle at 0% 0%,
-					rgba(139, 92, 246, 0.14),
-					transparent 32%
+					circle at 100% 0%,
+					rgba(236, 72, 153, 0.1),
+					transparent 30%
 				),
 				linear-gradient(
 					180deg,
@@ -226,20 +160,7 @@
 					rgba(255, 255, 255, 0) 100%
 				),
 				var(--surface-card-current-fill-strong);
-			box-shadow:
-				0 24px 44px -28px rgba(1, 0, 6, 0.98),
-				0 18px 32px -32px rgba(139, 92, 246, 0.36),
-				inset 0 1px 0 rgba(255, 255, 255, 0.035);
-		}
-
-		.project-card:hover::after {
-			opacity: 0.22;
-			transform: translate3d(-3%, -7%, 0);
-		}
-
-		.project-card:hover .project-card-category {
-			color: var(--text-accent);
-			opacity: 0.86;
+			box-shadow: 0 24px 44px -28px rgba(1, 0, 6, 0.98);
 		}
 
 		.project-card:hover .project-card-link-arrow {
