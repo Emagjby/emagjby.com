@@ -40,25 +40,6 @@
 <style>
 	.labs-callout {
 		border-color: var(--border-subtle);
-		background:
-			linear-gradient(180deg, rgba(255, 255, 255, 0.025), rgba(255, 255, 255, 0)),
-			var(--surface-card-fill);
-		box-shadow:
-			var(--surface-shadow-soft),
-			inset 0 1px 0 rgba(255, 255, 255, 0.025);
-	}
-
-	@supports ((-webkit-backdrop-filter: blur(1px)) or (backdrop-filter: blur(1px))) {
-		.labs-callout {
-			background:
-				linear-gradient(
-					180deg,
-					rgba(255, 255, 255, 0.025),
-					rgba(255, 255, 255, 0)
-				),
-				var(--surface-card-fill-frosted);
-			-webkit-backdrop-filter: blur(4px) saturate(110%);
-			backdrop-filter: blur(4px) saturate(110%);
-		}
+		background: rgba(16, 14, 22, 0.68);
 	}
 </style>

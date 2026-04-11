@@ -44,23 +44,6 @@
 		);
 	}
 
-	.site-footer::before {
-		content: "";
-		position: absolute;
-		top: -1px;
-		left: 0;
-		right: 0;
-		height: 1px;
-		background: linear-gradient(
-			90deg,
-			rgba(139, 92, 246, 0),
-			rgba(177, 151, 255, 0.3),
-			rgba(236, 72, 153, 0.14),
-			rgba(139, 92, 246, 0)
-		);
-		pointer-events: none;
-	}
-
 	:global(.site-footer-inner) {
 		display: flex;
 		flex-direction: column;
