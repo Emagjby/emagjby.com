@@ -48,15 +48,15 @@
 
 <style>
 	:global(.site-header-inner) {
-		min-height: 4rem;
-		padding-top: 0.85rem;
-		padding-bottom: 0.85rem;
+		min-height: 3.5rem;
+		padding-top: 0.65rem;
+		padding-bottom: 0.65rem;
 	}
 
 	.site-brand-lockup {
 		display: inline-flex;
 		align-items: center;
-		gap: 0.72rem;
+		gap: 0.58rem;
 		padding: 0.2rem 0.1rem;
 		min-width: 0;
 	}
@@ -66,8 +66,8 @@
 		flex-shrink: 0;
 		align-items: center;
 		justify-content: center;
-		width: 1.32rem;
-		height: 1.32rem;
+		width: 1.15rem;
+		height: 1.15rem;
 	}
 
 	.site-brand-mark {
@@ -84,7 +84,7 @@
 
 	.site-brand-wordmark {
 		display: inline-block;
-		font-size: 0.97rem;
+		font-size: 0.92rem;
 		font-weight: 600;
 		letter-spacing: -0.028em;
 		line-height: 1;
@@ -93,12 +93,13 @@
 
 	.site-header-nav {
 		flex-shrink: 0;
+		min-width: 0;
 	}
 
 	.site-nav-list {
 		display: flex;
 		align-items: center;
-		gap: 1.15rem;
+		gap: 0.78rem;
 		margin: 0;
 		padding: 0;
 		list-style: none;
@@ -107,10 +108,28 @@
 	.site-nav-link {
 		display: inline-flex;
 		align-items: center;
-		padding: 0.2rem 0.1rem;
-		font-size: 0.9rem;
+		padding: 0.16rem 0.08rem;
+		font-size: 0.83rem;
 		font-weight: 500;
-		letter-spacing: 0.012em;
+		letter-spacing: 0.006em;
+	}
+
+	@media (max-width: 399px) {
+		:global(.site-header-inner) {
+			gap: 0.75rem;
+		}
+
+		.site-brand-wordmark {
+			display: none;
+		}
+
+		.site-nav-list {
+			gap: 0.65rem;
+		}
+
+		.site-nav-link {
+			font-size: 0.8rem;
+		}
 	}
 
 	.site-brand-lockup:focus-visible,
@@ -146,6 +165,12 @@
 
 		.site-nav-list {
 			gap: 1.6rem;
+		}
+
+		.site-nav-link {
+			padding: 0.2rem 0.1rem;
+			font-size: 0.9rem;
+			letter-spacing: 0.012em;
 		}
 	}
 
