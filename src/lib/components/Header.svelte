@@ -108,7 +108,7 @@
 	.site-nav-link {
 		display: inline-flex;
 		align-items: center;
-		padding: 0.16rem 0.08rem;
+		padding: 0.22rem 0.08rem;
 		font-size: 0.83rem;
 		font-weight: 500;
 		letter-spacing: 0.006em;
@@ -168,7 +168,7 @@
 		}
 
 		.site-nav-link {
-			padding: 0.2rem 0.1rem;
+			padding: 0.24rem 0.1rem;
 			font-size: 0.9rem;
 			letter-spacing: 0.012em;
 		}

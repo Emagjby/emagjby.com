@@ -57,7 +57,7 @@
 	}
 
 	.hero-eyebrow {
-		letter-spacing: 0.14em;
+		letter-spacing: 0.2em;
 	}
 
 	.hero-heading {
@@ -90,16 +90,6 @@
 		display: flex;
 		flex-direction: column;
 		align-items: stretch;
-		font-size: 1rem;
-		width: 100%;
-		line-height: 1.68;
-		text-wrap: pretty;
-	}
-
-	.hero-actions {
-		display: flex;
-		flex-direction: column;
-		align-items: stretch;
 		width: 100%;
 		gap: 0.75rem;
 		margin-top: 1.6rem;
@@ -113,10 +103,6 @@
 	@media (min-width: 640px) {
 		.hero-section {
 			padding-top: clamp(4.5rem, 7vw, 7rem);
-		}
-
-		.hero-eyebrow {
-			letter-spacing: 0.2em;
 		}
 
 		.hero-heading {
